@@ -22,12 +22,14 @@ addPlayer = function () {
     console.log('nbr per groupe = ', nbrPerGroup);
     document.querySelector('#character').value = "";
     document.querySelector('#character').focus();
+    display_players()
 };
 
 // fonction pour reset les joueurs
 let clearAll = () => {
     players = [];
     localStorage.removeItem('Players');
+    display_players()
 }
 
 // Afficher la liste des joueurs
