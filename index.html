@@ -13,12 +13,46 @@
 </body>
 
 </html>
+
 <body>
+    <h1>Group Generator 3000</h1>
 
-    <h2> Insérez le nom du joueur : </h2>
-    <input id="character" type="text"> 
-    <input type="button" onClick="addPlayer()" value="add">
-    <input type='button' onClick="clearAll()" value= "Clear Team">
+    <div class="mainSection">
 
-  <script src="./scripts/script.js"></script>
-  </body>
+        <div class="nameInputDouble">
+            <input id="character" type="text" value="Please enter name Here.">
+            
+            <input class="input-btn" type="button" onClick="addPlayer()" value="add">
+        </div>
+        <br>
+        <input class="input-btn" type='button' onClick="clearAll()" value="Clear Team">
+
+        <h3> Your names:</h3>
+
+        <textarea id="players_list" readonly></textarea>
+        <br>
+
+        Number of people per group:  <input id="nbrPerGroup" type="number" min="1" required> </input>
+
+
+
+        <input class="input-btn" type='button' onClick="groupDisplay()" id="createGroup" value="créer groupe !">
+
+
+        
+    </div>
+    <div id="Groups">
+
+    </div>
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+
+<!-- on choisit le nombre de personne par groupe, -->
+
+<!-- on récupere la liste de nom  puis la display -->
+
+<!-- a partir de la liste de nom et du nombre de groupe on fait un random -->
+<!-- on affiche le "groupe numéro X : nomDuJoueur" -->
+<!-- css -->
